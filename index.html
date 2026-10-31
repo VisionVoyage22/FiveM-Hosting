@@ -3,67 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dev's Hosting | Premium FiveM Hosting</title>
+    <title>My FiveM Dev Dashboard</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cloudflare.com">
 </head>
 <body>
 
-    <!-- Navbar -->
+    <!-- Top Navigation -->
     <nav class="navbar">
-        <div class="logo"><i class="fa-solid fa-server"></i> APEX<span>NODE</span></div>
-        <ul class="nav-links">
-            <li><a href="#features">Features</a></li>
-            <li><a href="#pricing">Pricing</a></li>
-            <li><a href="#support">Support</a></li>
-        </ul>
-        <a href="https://discord.gg" target="_blank" class="btn-discord"><i class="fa-brands fa-discord"></i> Discord</a>
+        <div class="logo"><i class="fa-solid fa-terminal"></i> MY<span>SERVER</span></div>
+        <div class="status-badge"><i class="fa-solid fa-circle"></i> Local Host Mode</div>
     </nav>
 
-    <!-- Hero Section -->
+    <!-- Header Section -->
     <header class="hero">
         <div class="hero-content">
-            <h1>Ultra-Performance <span>FiveM Hosting</span></h1>
-            <p>Deploy custom ESX, QBCore, or vMenu servers instantly with lightning-fast NVMe storage and global DDoS defense.</p>
-            <a href="#pricing" class="btn-primary">View Pricing Plans</a>
+            <h1>Server <span>Command Center</span></h1>
+            <p>Quick launch links and developer tools for managing your local FiveM test environment.</p>
         </div>
     </header>
 
-    <!-- Pricing Cards Section -->
-    <section id="pricing" class="pricing-section">
-        <h2>Choose Your <span>Server Tier</span></h2>
-        <div class="pricing-container">
-            
-            <!-- Tier 1 -->
-            <div class="card">
-                <h3>Civ Tier</h3>
-                <div class="price">$0<span>/mo</span></div>
-                <p class="desc">Perfect for testing scripts with a few close friends.</p>
-                <ul>
-                    <li><i class="fa-solid fa-check"></i> Up to 32 Slots</li>
-                    <li><i class="fa-solid fa-check"></i> 4GB RAM</li>
-                    <li><i class="fa-solid fa-check"></i> Free Tunneling Enabled</li>
-                    <li><i class="fa-solid fa-check"></i> txAdmin Control Panel</li>
-                </ul>
-                <a href="https://discord.gg" class="btn-card">Deploy Server</a>
-            </div>
-
-            <!-- Tier 2 -->
-            <div class="card premium">
-                <div class="badge">Popular</div>
-                <h3>Chop Shop</h3>
-                <div class="price">$15<span>/mo</span></div>
-                <p class="desc">Built for growing custom roleplay communities.</p>
-                <ul>
-                    <li><i class="fa-solid fa-check"></i> Up to 64 Slots</li>
-                    <li><i class="fa-solid fa-check"></i> 8GB Dedicated RAM</li>
-                    <li><i class="fa-solid fa-check"></i> Premium DDoS Protection</li>
-                    <li><i class="fa-solid fa-check"></i> 24/7 Public Server List</li>
-                </ul>
-                <a href="https://discord.gg" class="btn-card">Buy Now</a>
-            </div>
-
+    <!-- Quick Tool Panels -->
+    <section class="dashboard-grid">
+        
+        <!-- Panel 1: Connection Triggers -->
+        <div class="panel-card">
+            <h3><i class="fa-solid fa-play"></i> Quick Launch</h3>
+            <p class="panel-desc">Launch FiveM and join your server instantly via local direct links.</p>
+            <a href="fivem://connect/127.0.0.1:30120" class="action-btn connect"><i class="fa-solid fa-right-to-bracket"></i> Connect via localhost</a>
+            <p class="hint">Ensure your fxserver.exe is running first.</p>
         </div>
+
+        <!-- Panel 2: Core Admin Tool Links -->
+        <div class="panel-card">
+            <h3><i class="fa-solid fa-sliders"></i> Panel Access</h3>
+            <p class="panel-desc">Quick shortcuts to your local web management panels.</p>
+            <a href="http://127.0.0.1:40120" target="_blank" class="action-btn admin"><i class="fa-solid fa-user-gear"></i> Open txAdmin Panel</a>
+            <a href="https://fivem.net" target="_blank" class="action-btn external"><i class="fa-solid fa-key"></i> Cfx.re Keymaster</a>
+        </div>
+
+        <!-- Panel 3: Dev Shortcuts & Notes -->
+        <div class="panel-card">
+            <h3><i class="fa-solid fa-code"></i> Useful Resources</h3>
+            <p class="panel-desc">Fast access to native reference documentation while script testing.</p>
+            <a href="https://fivem.net" target="_blank" class="action-btn dev"><i class="fa-solid fa-book"></i> FiveM Native Reference</a>
+            <a href="https://github.com" target="_blank" class="action-btn dev"><i class="fa-solid fa-folder-open"></i> Find Scripts on GitHub</a>
+        </div>
+
     </section>
 
 </body>
